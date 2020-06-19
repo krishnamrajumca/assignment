@@ -26,10 +26,10 @@ function App(props) {
       
         <div className="p-grid p-col-12 p0">
         
-          <div className="p-col-2 p-md-2 p-lg-2 p-sm-3 " >
+          <div className="p-col-2 p-md-1 p-lg-1 p-sm-2 " >
             <nav>
               <ul className="nav-list">
-              <Link to="/home">
+              <Link to="">
                 <li className="nav-list-item active" id="home" onClick={()=>navigate('home')}>
                   
                     <i className="pi pi-home"></i>
@@ -45,21 +45,21 @@ function App(props) {
               </ul>
             </nav>
           </div>
-          <div className="p-col-10 p-md-10 p-lg-10 p-sm-9 p0">
+          <div className="p-col-10 p-md-11 p-lg-11 p-sm-10 p0">
             <header>
               <div className="p-grid p-col-12">
                 <div className="p-md-9 p-lg-9 p-sm-6 align-left">
-                    Logo
+                    Assignment
                 </div>
                 <div className="p-md-3 p-lg-3 p-sm-6 align-right">
-                    krish
+                    krishna
                 </div>
               </div>
             </header>
             <div>
               
                 <Switch>
-                  <Route path="/home">
+                  <Route exact path="/">
                     <Home />
                   </Route>
                   <Route exact path="/about">
