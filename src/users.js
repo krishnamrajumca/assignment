@@ -7,7 +7,7 @@ const Users = ({callback}) =>{
     const users = useSelector(state => state.postsReducer.users);
     return(
         <div>
-           <DataTable value={users} selectionMode="single" onSelectionChange={e => callback(e.value)} responsive={true} header="Responsive">
+           <DataTable value={users} selectionMode="single" onSelectionChange={e => callback(e.value)} responsive={true}>
                 <Column field="first_name" header="First Name" sortable={true} />
                 <Column field="last_name" header="Last Name" sortable={true}  />
                 <Column field="email" header="email" />
