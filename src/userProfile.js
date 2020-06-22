@@ -31,7 +31,6 @@ const UserProfile = ()=>{
             <div className="p-grid p-col-12">
                 <div className="p-col-4 p-md-4 p-sm-6">
                    <InputText id="first_name" value={first_name} onChange={(e) => setFirstName(e.target.value)} placeholder="First Name"/>
-                        
                 </div>
                 <div className="p-col-3 p-md-4 p-sm-6">
                     <InputText value={last_name} onChange={(e) => setLastName(e.target.value)} placeholder="Last Name"/>
@@ -39,7 +38,6 @@ const UserProfile = ()=>{
                 <div className="p-col-3 p-md-4 p-sm-6">
                     <InputText value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
                 </div>
-            
             </div>
             <div className="p-grid p-col-12">
                 <div className="p-col-3 p-md-4 p-sm-6">
@@ -51,9 +49,8 @@ const UserProfile = ()=>{
                 <div className="p-col-3 p-md-4 p-sm-6">
                     <InputText value={city} onChange={(e) => setCity(e.target.value)} placeholder="City"/>
                 </div>
-            
             </div>
-            <div className="p-col-12 p-grid">
+            <div className="p-col-12 p-grid  p-align-end p-justify-end">
             <Button label="Submit" onClick={submit} />
             </div>
         </div>

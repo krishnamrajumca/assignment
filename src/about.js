@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () =>{
     return(
-        <div style={{height:'200px'}}>About</div>
+        <div className="p-col-12 p-justify-center p-align-center">About</div>
     )
 }
 
